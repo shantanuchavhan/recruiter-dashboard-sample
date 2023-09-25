@@ -3,11 +3,55 @@ body, html {
   padding: 0;
   height: 100%;
 }
+h1{
+  margin: 0;
+  font-size: 21px;
+}
+h2{
+  margin: 0;
+  font-size: 19px;
+}
+h3{
+  margin: 0;
+  font-size: 16px;
+}
+h4{
+  margin: 0;
+  font-size: 14px;
+}
+h5{
+  margin: 0;
+  font-size: 12px;
+}
+svg{
+  height: 18px;
+  width: 18px;
+}
+.gray-color{
+  color: #7b7b7b;
+}
+.blue-color{
+  color: rgb(123, 123, 250);
+}
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.justifyBtwn{
+  justify-content: space-between;
+}
 
 .App {
   display: grid;
-  grid-template-columns: 200px 1fr; /* Sidebar takes 200px, the rest is for Header and Main */
-  grid-template-rows: 100px 1fr; /* Header takes 100px, the rest is for Main */
+  grid-template-columns: 64px 1fr; /* Sidebar 64*/
+  grid-template-rows: 80px 1fr; /* Header 100 */
   grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -19,23 +63,26 @@ body, html {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  border: 1px solid red;
 }
 
 .header {
   grid-area: header;
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #7b7b7b;
+  padding: 16px;
+  border: 1px solid red;
 }
 
 .main {
   grid-area: main;
-  padding: 20px;
+  padding: 16px;
+  border: 1px solid red;
 }
 
-/* Additional styling for better appearance */
+
 .container {
   font-family: Arial, sans-serif;
 }
 
-/* You can add more styles to customize the appearance as needed */
+
