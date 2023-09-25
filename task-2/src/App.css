@@ -1,38 +1,41 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Sidebar takes 200px, the rest is for Header and Main */
+  grid-template-rows: 100px 1fr; /* Header takes 100px, the rest is for Main */
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  height: 100vh; /* Make the container take the full viewport height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  grid-area: sidebar;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  grid-area: header;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+  grid-area: main;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Additional styling for better appearance */
+.container {
+  font-family: Arial, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* You can add more styles to customize the appearance as needed */
