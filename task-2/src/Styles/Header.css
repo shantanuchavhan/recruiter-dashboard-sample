@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: start;
+    align-items: flex-start;
+ 
+  
 
 }
 .HeaderMiddle{
@@ -10,6 +12,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 16px;
+    border-radius: 20px;
+    background-color: white;
     
 }
 
@@ -17,13 +21,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
 }
-
+.HeaderRightBtn{
+    display: flex;
+    align-items: center;
+    background-color: #1D4ED8;
+    height: 36px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+.HeaderRightBtn svg{
+    background-color: #1D4ED8;
+    border-radius: 0;
+    color: white;
+    border-left: 1px solid #264086;
+}
+.HeaderRightBtnButton{
+   font-size: 13px;
+    background-color: #1D4ED8;
+   padding: 0 9px;
+    border-radius: 0;
+}
 .ant-dropdown-menu {
     padding: 0 !important;
+    box-shadow: -1px 5px 5px rgb(64, 107, 152);
 }
-
-
 
 
 .ant-dropdown-menu .ant-dropdown-menu-item {
@@ -31,10 +55,17 @@
     padding: 0; /* Remove default padding */
     height: 56px; /* Set the height to your desired value */
     line-height: 56px; /* Center text vertically within the menu item */
-
-   
+    
+    
     &:hover {
         background-color: #EDF2FF !important;
         color: #1D4ED8 !important;
+        
     }
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item h4:hover{
+    background-color: #D1DDFF;
+    padding:4px 8px ;
+    border-radius: 16px;
 }

@@ -1,3 +1,14 @@
+/* Hide scrollbars for all elements */
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+
 body, html {
   margin: 0;
   padding: 0;
@@ -9,11 +20,12 @@ h1{
 }
 h2{
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
 }
 h3{
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 400;
 }
 h4{
   margin: 0;
@@ -22,22 +34,32 @@ h4{
 h5{
   margin: 0;
   font-size: 12px;
+  font-weight: 200;
 }
 svg{
   height: 18px;
   width: 18px;
   padding: 8px;
-
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  
 }
 .gray-color{
   color: #7b7b7b;
 }
-.blue-color{
-  color: rgb(123, 123, 250);
+.color-blue{
+  color: #1D4ED8;
+}
+.bagColor-blue{
+  background-color: #1D4ED8;
 }
 .flex{
   display: flex;
   align-items: center;
+  gap: 8px;
+}
+.gap16{
   gap: 16px;
 }
 .center{
@@ -50,7 +72,14 @@ svg{
   justify-content: space-between;
 }
 .lightShadow{
-  box-shadow: 3px 3px 3px rgb(234, 233, 233);
+  box-shadow: -1px 5px 10px rgb(234, 233, 233);
+}
+
+.Highlight-lite{
+    
+    background-color: #aec9d141;
+    padding:4px 4px ;
+    border-radius: 8px;
 }
 
 .App {
@@ -66,30 +95,39 @@ svg{
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #323232;
   padding: 20px;
-  border: 1px solid red;
+  border-right: 0.4px solid #e8eafa;
+  position: fixed;
+  left: 0%;
 }
 
 
 
 .header {
   grid-area: header;
-  background-color: rgb(255, 255, 255);
+  background-color: #f7f8fe;
   color: #7b7b7b;
-  padding: 16px;
-  border: 1px solid red;
+  padding:24px;
+  padding-bottom: 0px;
+  position: fixed;
+  left: 6.5%;
+  width: 90%;
+  z-index: 10;
+  
 }
 
 .main {
   grid-area: main;
-  padding: 16px;
-  border: 1px solid red;
+  padding:16px 24px;
+  background-color: #f7f8fe;
+
+ 
 }
 
 
-.container {
+.App {
   font-family: Arial, sans-serif;
 }
 

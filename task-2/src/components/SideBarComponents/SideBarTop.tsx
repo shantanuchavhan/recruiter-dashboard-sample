@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SideBarTop = () => {
+const SideBarTop: React.FC = () => {
   return (
     <div className='SideBarTop'>
       <div className='grayCircle'>
