@@ -4,7 +4,7 @@ import SideBarBottom from './SideBarComponents/SideBarBottom'
 import '../Styles/SideBar.css'
 const SideBar = () => {
   return (
-    <div>
+    <div className='SideBar'>
         <SideBarTop/>
         <SideBarBottom/>
       

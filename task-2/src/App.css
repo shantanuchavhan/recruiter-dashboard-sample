@@ -26,6 +26,8 @@ h5{
 svg{
   height: 18px;
   width: 18px;
+  padding: 8px;
+
 }
 .gray-color{
   color: #7b7b7b;
@@ -47,6 +49,9 @@ svg{
 .justifyBtwn{
   justify-content: space-between;
 }
+.lightShadow{
+  box-shadow: 3px 3px 3px rgb(234, 233, 233);
+}
 
 .App {
   display: grid;
@@ -58,6 +63,7 @@ svg{
   height: 100vh; /* Make the container take the full viewport height */
 }
 
+
 .sidebar {
   grid-area: sidebar;
   background-color: #333;
@@ -65,6 +71,8 @@ svg{
   padding: 20px;
   border: 1px solid red;
 }
+
+
 
 .header {
   grid-area: header;

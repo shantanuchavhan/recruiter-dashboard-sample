@@ -1,0 +1,34 @@
+.SideBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.SideBarTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.grayCircle{
+    padding: 12px;
+    background-color: rgb(160, 159, 149);
+    border-radius: 40%;
+}
+
+.ProfileName{
+    padding: 8px;
+    background-color: rgb(160, 159, 149);
+    border-radius: 50%;
+}
+
+.SideBarBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
