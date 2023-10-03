@@ -44,6 +44,11 @@
    padding: 0 9px;
     border-radius: 0;
 }
+
+.HeaderMiddleMenu{
+    box-shadow: -1px 5px 5px rgb(64, 107, 152);
+}
+
 .ant-dropdown-menu {
     padding: 0 !important;
     box-shadow: -1px 5px 5px rgb(64, 107, 152);

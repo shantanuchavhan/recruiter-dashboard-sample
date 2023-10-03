@@ -12,7 +12,7 @@ const HeaderMiddleDropDown: React.FC<HeaderMiddleDropDownProps> = () => {
   };
 
   const menu = (
-    <Menu onClick={handleMenuClick}>
+    <Menu className='HeaderMiddleMenu' onClick={handleMenuClick}>
         <Menu.Item key="Applied">
             <div className='flex justifyBtwn'>
                 <h3>Applied</h3>
